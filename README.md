@@ -25,7 +25,7 @@ The necessity of joint domain alignment and discriminant features learning can b
 * This code requires Python 2.7 and implemented in Tensorflow 1.9. You can download all the datasets used in our paper from [Dataset](https://pan.baidu.com/s/1IMUVnpM8Ve6XX37rtv2zJQ#list/path=%2F) and place them in the specified directory, and place them in the specified directory. Run **trainLenet.py** to obtain the results. 
 
 ## trainLenet.py
-* the Core Code of our proposed **Instance-Based** and **Center-Based** discriminative feature learning can be seen in trainLenet.py
+* the Core Code of our proposed **Instance-Based** and **Center-Based** discriminative feature learning can be seen in **trainLenet.py**
 
 ``` python
         ## Instence-Based Discriminative Feature Learning
@@ -58,7 +58,7 @@ The necessity of joint domain alignment and discriminant features learning can b
             self.discriminative_loss=self.discriminative_loss/(self.ClassNum*self.BatchSize+self.ClassNum*self.ClassNum)
 ```
 
-* If you want to use these methods, you can modify them in **trainLenet.py**. For the domain loss, the **MMD**, **KMMD**, **mmatch** **LCORAL**(LogCoral) are also included in our codes.
+* If you want to use these methods, you can modify them in **trainLenet.py**. For the domain loss, the **MMD**, **KMMD**, **mmatch** **LCORAL**(LogCoral) are also included in our codes. For the DiscriminativeLoss, we have **CenterBased** and **InstanceBased**.
 
 ``` python
         self.CalDiscriminativeLoss(method="CenterBased")
