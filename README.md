@@ -13,6 +13,6 @@ The necessity of joint domain alignment and discriminant features learning can b
 * Our proposed JDDA achieves a state-of-art results among those completing Discrepancy-Based Domain Adaptation methods. 
 ![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig3.jpg)
 
-* The t-sne  visualization, with the incorporation of our proposed $L_d$
+* The t-sne  visualization, with the incorporation of our proposed discriminative loss, the deep features become better clusterred and more separable
 ![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig4.jpg)
 
