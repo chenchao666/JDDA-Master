@@ -7,3 +7,6 @@ Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep
 The necessity of joint domain alignment and discriminant features learning can be seen below
 ![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig1.jpg)
 
+# Result 
+![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig2.jpg)
+
