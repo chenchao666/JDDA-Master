@@ -2,9 +2,9 @@
 Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation
 * This repository contains code for our paper **Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation** [Download Paper](https://arxiv.org/abs/1808.09347)
 
-* Another qualified repository completed by the co-author of **JDDA** can be seen [JDDA repository](https://github.com/A-bone1/JDDA)
+* Another qualified repository completed by the co-author can be seen [JDDA repository](https://github.com/A-bone1/JDDA)
 
-* Our code contains not only our proposed **JDDA**, but also other famous deep domain adaptation methods **DDC(MMD)**, **DeepCoral**, **DAN(KMMD)** and **CMD**(Central Moment Discrepancy), **LogCoral**, ect.
+* Our code contains not only our proposed **JDDA**, but also other famous distribution discrepancy measures **MMD**, **DeepCoral**, **KMMD** and **CMD**(Central Moment Discrepancy), **LogCoral**, ect.
 
 * If you have any question about our [paper](https://arxiv.org/abs/1808.09347) or code, please don't hesitate to contact with me **ahucomputer@126.com**, we will update our repository accordingly
 
