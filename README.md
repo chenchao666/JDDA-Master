@@ -48,7 +48,7 @@ The necessity of joint domain alignment and discriminant features learning can b
         ## Center-Based Discriminative Feature Learning, Note that the center_loss.py should be import 
 	## Note that when using the Center-Based Discriminative Loss, the "global class center" should be also update in each iteration by using
 	## with tf.control_dependencies([self.centers_update_op]):
-        ## self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
+        ##     self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
         elif method=="CenterBased":
             Xs=self.source_model.fc4
             labels=tf.argmax(self.source_label,1)
