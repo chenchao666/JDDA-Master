@@ -24,7 +24,7 @@ The necessity of joint domain alignment and discriminant features learning can b
 
 ## trainLenet.py
 * the Core Code of our proposed **Instance-Based** and **Center-Based** discriminative feature learning can be seen in trainLenet.py
-''' python
+``` python
         ## Instence-Based Discriminative Feature Learning
 		## Xs is the deep features from the source domain with its row-num equals to batchsize and colum-num equals to neural of neurons in the adapted layer
 		## self.W is the indicator matrix. self.W[i,j]=1 means i-th and j-th samples are from the same calss, self.W[i,j]=0 
@@ -53,4 +53,4 @@ The necessity of joint domain alignment and discriminant features learning can b
             self.inter_loss, self.intra_loss, self.centers_update_op = get_center_loss(Xs, labels, 0.5, 10)
             self.discriminative_loss = self.intra_loss+ self.inter_loss
             self.discriminative_loss=self.discriminative_loss/(self.ClassNum*self.BatchSize+self.ClassNum*self.ClassNum)
-'''
+```
