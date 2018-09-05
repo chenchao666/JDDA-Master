@@ -65,3 +65,10 @@ The necessity of joint domain alignment and discriminant features learning can b
         self.CalDomainLoss(method="CORAL")
 ```
 
+* Note that the centers_update_op needs to be added in the control_dependencies when using the Center-Based method. When using the Instance-Based method you need to Comment **with tf.control_dependencies([self.centers_update_op])**
+
+``` python
+with tf.control_dependencies([self.centers_update_op]):
+    self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
+```
+
