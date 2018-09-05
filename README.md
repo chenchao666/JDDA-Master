@@ -8,5 +8,6 @@ The necessity of joint domain alignment and discriminant features learning can b
 ![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig1.jpg)
 
 # Result 
-![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig2.jpg)
+![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig3.jpg)
+![image](https://github.com/chenchao666/JDDA-Master/blob/master/img/fig4.jpg)
 
