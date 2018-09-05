@@ -6,6 +6,8 @@ Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep
 
 * Our code contains not only our proposed **JDDA**, but also other famous deep domain adaptation methods **DDC(MMD)**, **DeepCoral**, **DAN(KMMD)** and **CMD**(Central Moment Discrepancy), **LogCoral**, ect.
 
+* If you have any question about our [paper](https://arxiv.org/abs/1808.09347) or code, please don't hesitate to contact with me **ahucomputer@126.com**, we will update our repository accordingly
+
 # Movition of our proposal
 * Most of existing work only concentrates on learning shared feature representation by minimizing the distribution discrepancy across different domains. Due to the fact that all the domain alignment approaches can only reduce, but not remove the domain shift, target domain samples distributed near the edge of the clusters, or far from their corresponding class centers are easily to be misclassified by the hyperplane learned from the source domain. To alleviate this issue, we propose to joint domain alignment and discriminative feature learning, which could benefit both domain alignment and final classification. 
 The necessity of joint domain alignment and discriminant features learning can be seen below
