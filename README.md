@@ -26,9 +26,9 @@ The necessity of joint domain alignment and discriminant features learning can b
 * the Core Code of our proposed **Instance-Based** and **Center-Based** discriminative feature learning can be seen in trainLenet.py
 ``` python
         ## Instence-Based Discriminative Feature Learning
-		## Xs is the deep features from the source domain with its row-num equals to batchsize and colum-num equals to neural of neurons in the adapted layer
-		## self.W is the indicator matrix. self.W[i,j]=1 means i-th and j-th samples are from the same calss, self.W[i,j]=0 
-		## means i-th and j-th samples are from difference calsses
+        ## Xs is the deep features from the source domain with its row-num equals to batchsize and colum-num equals to neural of neurons in the adapted layer
+	## self.W is the indicator matrix. self.W[i,j]=1 means i-th and j-th samples are from the same calss, self.W[i,j]=0 
+	## means i-th and j-th samples are from difference calsses
     def CalDiscriminativeLoss(self,method):
         if method=="InstanceBased":
             Xs = self.source_model.fc4
@@ -44,9 +44,9 @@ The necessity of joint domain alignment and discriminant features learning can b
 
 
         ## Center-Based Discriminative Feature Learning, Note that the center_loss.py should be import 
-		## Note that when using the Center-Based Discriminative Loss, the "global class center" should be also update in each iteration by using
-		## with tf.control_dependencies([self.centers_update_op]):
-        ##     self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
+	## Note that when using the Center-Based Discriminative Loss, the "global class center" should be also update in each iteration by using
+	## with tf.control_dependencies([self.centers_update_op]):
+        ## self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
         elif method=="CenterBased":
             Xs=self.source_model.fc4
             labels=tf.argmax(self.source_label,1)
