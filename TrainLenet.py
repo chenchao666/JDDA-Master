@@ -24,7 +24,7 @@ class Train():
         self.SourceData,self.SourceLabel=load_svhn('svhn')
         self.TargetData, self.TargetLabel=load_mnist('mnist')
         self.TestData, self.TestLabel = load_mnist('mnist',split='test')
-		## when using Instance-Based method, the self.EdgeWeights should be calculated according to the source labels, otherwise, it can be randomly set for the placehoder.
+        ## when using Instance-Based method, the self.EdgeWeights should be calculated according to the source labels, otherwise, it can be randomly set for the placehoder.
         # self.EdgeWeights=Label2EdgeWeights(self.SourceLabel)
         self.EdgeWeights=zeros((self.SourceLabel.shape[0],self.SourceLabel.shape[0]))
 
@@ -149,10 +149,10 @@ class Train():
             self.target_loss=-tf.reduce_mean(tf.reduce_sum(trg_softmax * tf.log(trg_softmax), axis=1))
 
 
-        ## Instence-Based Discriminative Feature Learning
-		## Xs is the deep features from the source domain with its row-num equals to batchsize and colum-num equals to neural of neurons in the adapted layer
-		## self.W is the indicator matrix. self.W[i,j]=1 means i-th and j-th samples are from the same calss, self.W[i,j]=0 
-		## means i-th and j-th samples are from difference calsses
+   ## Instence-Based Discriminative Feature Learning
+   ## Xs is the deep features from the source domain with its row-num equals to batchsize and colum-num equals to neural of neurons in the adapted layer
+   ## self.W is the indicator matrix. self.W[i,j]=1 means i-th and j-th samples are from the same calss, self.W[i,j]=0 
+   ## means i-th and j-th samples are from difference calsses
     def CalDiscriminativeLoss(self,method):
         if method=="InstanceBased":
             Xs = self.source_model.fc4
@@ -168,8 +168,8 @@ class Train():
 
 
         ## Center-Based Discriminative Feature Learning, Note that the center_loss.py should be import 
-		## Note that when using the Center-Based Discriminative Loss, the "global class center" should be also update in each iteration by using
-		## with tf.control_dependencies([self.centers_update_op]):
+	## Note that when using the Center-Based Discriminative Loss, the "global class center" should be also update in each iteration by using
+	## with tf.control_dependencies([self.centers_update_op]):
         ##     self.solver = tf.train.AdamOptimizer(learning_rate=self.LearningRate).minimize(self.loss)
         elif method=="CenterBased":
             Xs=self.source_model.fc4
