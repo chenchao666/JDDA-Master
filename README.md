@@ -22,7 +22,7 @@ The necessity of joint domain alignment and discriminant features learning can b
 
 
 # Run The Code
-* This code requires Python 2.7 and implemented in Tensorflow 1.9. You can download all the datasets used in our paper from [Dataset](https://pan.baidu.com/s/1IMUVnpM8Ve6XX37rtv2zJQ#list/path=%2F) and place them in the specified directory, and place them in the specified directory. Run **trainLenet.py** to obtain the results. 
+* This code requires Python 2.7 and implemented in Tensorflow 1.9. You can download all the datasets used in our paper from [Dataset](https://pan.baidu.com/s/1IMUVnpM8Ve6XX37rtv2zJQ#list/path=%2F)  and place them in the specified directory. Run **trainLenet.py** to obtain the results. 
 
 ## trainLenet.py
 * the Core Code of our proposed **Instance-Based** and **Center-Based** discriminative feature learning can be seen in **trainLenet.py**
