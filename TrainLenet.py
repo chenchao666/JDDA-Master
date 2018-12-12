@@ -259,7 +259,7 @@ class Train():
 
 
 def main():
-    discriminative_loss_param = 0.003 ##0.03 for InstanceBased method, 0.01 for CenterBased method
+    discriminative_loss_param = 0.01 ##0.03 for InstanceBased method, 0.01 for CenterBased method
     domain_loss_param = 8
     adver_loss_param=0
     param=[discriminative_loss_param, domain_loss_param,adver_loss_param]
