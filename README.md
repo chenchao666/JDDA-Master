@@ -2,6 +2,8 @@
 Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation
 * This repository contains code for our paper **Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation** [Download Paper](https://arxiv.org/abs/1808.09347)
 
+* Another our domain adaptation paper HoMM is also recommended ""
+
 * Another qualified repository completed by the co-author can be seen [JDDA repository](https://github.com/A-bone1/JDDA)
 
 * Our code contains not only our proposed **JDDA**, but also other famous distribution discrepancy measures **MMD**, **DeepCoral**, **KMMD** and **CMD**(Central Moment Discrepancy), **LogCoral**, ect.
@@ -22,9 +24,9 @@ The necessity of joint domain alignment and discriminant features learning can b
 
 
 # Run The Code
-* This code requires Python 2.7 and implemented in Tensorflow 1.9. You can download all the datasets used in our paper from [Dataset](https://pan.baidu.com/s/1IMUVnpM8Ve6XX37rtv2zJQ#list/path=%2F)  and place them in the specified directory. Run **trainLenet.py** to obtain the results. 
-[Dataset_mnist](https://drive.google.com/open?id=167tVIBI2dVa0D18i6CiM-hicFJ3DJFzX)
-[Dataset_office](https://drive.google.com/open?id=1-OSkyh1Vzg_sxWJ6u4nvuQ3FRfKmZ-UF)
+* This code requires Python 2.7 and implemented in Tensorflow 1.9. You can download all the datasets used in our paper from [Dataset_mnist](https://drive.google.com/open?id=167tVIBI2dVa0D18i6CiM-hicFJ3DJFzX)
+[Dataset_office](https://drive.google.com/open?id=1-OSkyh1Vzg_sxWJ6u4nvuQ3FRfKmZ-UF) and place them in the specified directory. Run **trainLenet.py** to obtain the results. 
+
 
 
 ## trainLenet.py
