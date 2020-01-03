@@ -2,7 +2,7 @@
 Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation
 * This repository contains code for our paper **Joint Domain Alignment and Discriminative Feature Learning for Unsupervised Deep Domain Adaptation** [Download Paper](https://arxiv.org/abs/1808.09347)
 
-* Another our domain adaptation paper HoMM is also recommended ""
+* Another our domain adaptation paper HoMM is also recommended "HoMM: Higher-order Moment Matching for Unsupervised Domain Adaptation", codes are avaliable at [HoMM](https://github.com/chenchao666/HoMM-Master)
 
 * Another qualified repository completed by the co-author can be seen [JDDA repository](https://github.com/A-bone1/JDDA)
 
